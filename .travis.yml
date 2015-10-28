@@ -5,6 +5,11 @@ sudo: false
 node_js:
   - "0.12"
 
+cache:
+  apt: true
+  directories:
+    - node_modules
+
 before_install:
 # Decrypt the private key
 - openssl aes-256-cbc -K $encrypted_2ff46e3157ae_key -iv $encrypted_2ff46e3157ae_iv 
