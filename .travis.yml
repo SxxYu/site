@@ -29,9 +29,7 @@ before_install:
 - git clone https://github.com/luodaoyi/luodaoyi.github.io .deploy
 
 install:
-- npm install hexo-cli -g
-- npm install hexo --save
-- npm install
+- npm install --no-optional
 
 script:
 - hexo clean
