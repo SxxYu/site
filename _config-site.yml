@@ -14,7 +14,7 @@ timezone:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://luodaoyi.com
 root: /
-permalink: :category/:title
+permalink: :year/:month/:day/:title/
 permalink_defaults:
 
 # Directory
@@ -78,8 +78,8 @@ Social:
 duoshuo_shortname: luodaoyi
 baidu_analytics: 227548a37676c557885bb56cd147b82f
 feed:
-  type: rss2
-  path: rss2.xml
+  type: atom
+  path: atom.xml
   limit: 0
 since: 2015
 creative_commons: by-nc-sa

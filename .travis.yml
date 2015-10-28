@@ -5,9 +5,6 @@ sudo: false
 node_js:
   - "0.12"
 
-cache: 
-	api: true
-	directories: 
 		- node_modules
 
 before_install:
