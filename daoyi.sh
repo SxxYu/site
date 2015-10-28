@@ -38,19 +38,18 @@ function gitcommit () {
 	git commit -m ${nowdate}
 	echo "推送git的master分支"
 	git push -u origin master
-	echo "清除旧的静态页面"
-	hexo clean
-	echo "生成静态页面并推送"
-	hexo generate
-	echo "发布静态页面"	
-	hexo deploy
+	#echo "清除旧的静态页面"
+	#hexo clean
+	#echo "生成静态页面并推送"
+	#hexo generate
+	#echo "发布静态页面"	
+	#hexo deploy
 	echo "如果没有错误就是搞定了"
 }
 
 function installhexo () {
 	echo "安装hexo主程序"
 	npm install -g hexo-cli
-	npm install hexo --save
 	npm install
 	echo "安装插件"
 	npm install hexo-generator-feed --save
