@@ -38,7 +38,7 @@ install:
 
 script:
 - hexo clean
-- hexo g d
+- hexo g -d
 
 branches:
   only:
