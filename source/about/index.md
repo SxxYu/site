@@ -2,6 +2,7 @@ title: about
 date: 2015-10-28 16:07:37
 ---
 ##个人信息
+
 ![大官人](http://s.luodaoyi.com/blog.jpg)
 
 中文名：罗道义

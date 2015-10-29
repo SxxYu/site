@@ -1,6 +1,8 @@
 title: 不蒜子
 tags: Hexo
+categories: 工具
 ---
+
 #本文转载自[不蒜子不如](http://ibruce.info/2015/04/04/busuanzi/)
 静态网站建站现在有很多快速的技术和平台，但静态是优点也有缺点，由于是静态的，一些动态的内容如评论、计数等等模块就需要借助外来平台，评论有[“多说”](http://duoshuo.com/)，计数有[“不蒜”](http://service.ibruce.info/)！
 
