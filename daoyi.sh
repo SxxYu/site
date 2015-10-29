@@ -25,7 +25,7 @@ function installtheme () {
 	echo "删除主题目录的Git记录文件"
 	rm -rf themes/next/.git
 	echo "删除页脚文件"
-	rn -rf themes/next/layout/_partials/footer.swig
+	rm -rf themes/next/layout/_partials/footer.swig
 	echo "复制页脚文件到主题目录"
 	cp footer.swig themes/next/layout/_partials/footer.swig
 	#echo "复制readme.md"
@@ -37,7 +37,8 @@ function installtheme () {
 	echo `date`
 	echo "升级完毕"
 }
-function test () {
+
+function tests () {
 	path=$(cd "$(dirname "$0")"; pwd)
 	direpath=$path"/themes/next"
 	echo $direpath
@@ -119,7 +120,7 @@ function installhexo () {
 	echo "如果没有错误就是搞定了"
 }
 case $1 in
-	n)
+	x)
 	installhexo
 	;;
 	z)
@@ -129,10 +130,10 @@ case $1 in
 	gitcommit
 	;;
 	t)
-	test
+	tests
 	;;
 	*)
-	echo "daoyi.sh n 不同的电脑部署hexo"
+	echo "daoyi.sh x 不同的电脑部署hexo"
 	echo "daoyi.sh z 重新部署next主题"
 	echo "daoyi.sh b 提交博客源代码并且发布"
 	;;
