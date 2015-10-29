@@ -17,7 +17,7 @@ before_install:
 # Set the permission of the key
 - chmod 600 ~/.ssh/id_rsa
 # 设置known_hosts文件添加gitcafe
--in .travis/known_hosts -out ~/.ssh/known_hosts
+ -in .travis/known_hosts -out ~/.ssh/known_hosts
 #添加known_hosts的权限
 - chmod 600 ~/.ssh/known_hosts
 # Start SSH agent
