@@ -13,7 +13,7 @@ function installtheme () {
 	echo "克隆从github克隆远程库"
 	git clone https://github.com/iissnan/hexo-theme-next themes/next
 	echo "备份新的主题参数"
-	cp themes/next/_config.yml themes/next/back_config.yml
+	cp themes/next/_config.yml theme_back_config.yml
 	echo "删除主题参数"
 	rm -f themes/next/_config.yml
 	echo "复制主题参数"
