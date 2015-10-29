@@ -29,7 +29,7 @@ function installtheme () {
 }
 
 function gitcommit () {
-    echo "提交日志并且提交到github"
+    echo "开始提交日志并且提交到github"
 	echo "清除旧的静态页面"
 	hexo clean
 	echo `date`
