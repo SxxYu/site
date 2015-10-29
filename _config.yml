@@ -76,9 +76,10 @@ deploy:
 
 #社交连接
 social:
-  github: https://github.com/luodaoyi
+  GitHub: https://github.com/luodaoyi
   微博: http://weibo.com/5339740309
-  知乎: http://www.zhihu.com/people/daguanren
+  #知乎: http://www.zhihu.com/people/daguanren
+  #Twitter: https://twitter.com/luodaoyi
 
 #多说评论
 duoshuo_shortname: luodaoyi

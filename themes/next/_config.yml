@@ -71,8 +71,8 @@ scheme: Mist
 #  - always  expand for all pages automatically
 #  - hide    expand only when click on the sidebar toggle icon.
 #  - remove  Totally remove sidebar including sidebar toggle icon.
-#sidebar: post
-sidebar: always
+sidebar: post
+#sidebar: always
 #sidebar: hide
 #sidebar: remove
 
@@ -88,7 +88,8 @@ social_icons:
   # Icon Mappings
   GitHub: github
   #Twitter: twitter
-  Weibo: weibo
+  微博: weibo
+  #知乎: global
 
 
 # Sidebar Avatar
