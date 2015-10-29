@@ -10,6 +10,7 @@ addons:
   - gitcafe.com
   - 119.254.210.188
   - coding.net
+  - git.coding.net
 
 cache:
   apt: true
