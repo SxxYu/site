@@ -2,8 +2,7 @@ title: 不蒜子
 tags: Hexo
 categories: 工具
 ---
-
-#本文转载自[不蒜子不如](http://ibruce.info/2015/04/04/busuanzi/)
+本文转载自[不蒜子不如](http://ibruce.info/2015/04/04/busuanzi/)
 静态网站建站现在有很多快速的技术和平台，但静态是优点也有缺点，由于是静态的，一些动态的内容如评论、计数等等模块就需要借助外来平台，评论有[“多说”](http://duoshuo.com/)，计数有[“不蒜”](http://service.ibruce.info/)！
 
 >[“不蒜子”](http://service.ibruce.info/)与百度统计谷歌分析等有区别：[“不蒜子”](http://service.ibruce.info/)可直接将访问次数显示在您在网页上（也可不显示）；对于已经上线一段时间的网站，“不蒜子”允许您初始化首次数据。。

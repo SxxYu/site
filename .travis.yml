@@ -40,7 +40,7 @@ install:
 - npm install --no-optional
 
 script:
-- clean
+- hexo clean
 - hexo g
 - hexo deploy
 
