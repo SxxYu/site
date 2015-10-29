@@ -44,20 +44,27 @@ function gitcommit () {
 	git commit -m ${nowdate}
 	echo "推送git的master分支"
 	git push -u origin master
-	cd public
+	cd ../
+	mkdir website
+	cd website
+	git init
+	git remote add origin git@github.com:SxxYu/SxxYu.github.io.git
 	git pull
 	cd ../
-	cp public/.git .gitremote
+	cd site
 	hexo clean
 	hexo generate
-	mv .gitremote public/.git
-	cd public
+	cd ../
+	cp public/* website
+	cd website
 	git add .
 	git commit -m ${nowdate}
 	#git remote add origin git@github.com:SxxYu/SxxYu.github.io.git
 	git push -u origin master
 	#hexo deploy
+
 	cd ../
+	hexo clean
 	echo "如果没有错误就是搞定了"
 }
 
