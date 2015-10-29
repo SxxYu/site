@@ -30,6 +30,8 @@ function installtheme () {
 
 function gitcommit () {
     echo "提交日志并且提交到github"
+	echo "清除旧的静态页面"
+	hexo clean
 	echo `date`
 	nowdate=`date +%Y%m%d`
 	echo "添加git修改"
@@ -38,8 +40,7 @@ function gitcommit () {
 	git commit -m ${nowdate}
 	echo "推送git的master分支"
 	git push -u origin master
-	#echo "清除旧的静态页面"
-	#hexo clean
+
 	#echo "生成静态页面并推送"
 	#hexo generate
 	#echo "发布静态页面"	

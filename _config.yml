@@ -71,8 +71,8 @@ deploy:
   type: git
   message: [message]
   repo: 
-    github: git@github.com:luodaoyi/luodaoyi.github.io.git,[branch]
-    gitcafe: git@gitcafe.com:daoyi/daoyi.git,[branch]
+    github: git@github.com:luodaoyi/luodaoyi.github.io.git
+    gitcafe: git@gitcafe.com:daoyi/daoyi.git
 
 Social: 
   github: https://github.com/luodaoyi
