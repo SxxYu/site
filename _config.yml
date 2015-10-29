@@ -74,6 +74,14 @@ deploy:
    gitcafe: git@gitcafe.com:daoyi/daoyi.git
    #coding: git@git.coding.net:luodaoyi/blog.git
 
+#社交
+social_icons:
+#  enable: true
+  # Icon Mappings
+  GitHub: github
+  #Twitter: twitter
+  Weibo: weibo
+
 #社交连接
 social:
   github: https://github.com/luodaoyi
@@ -99,15 +107,18 @@ feed:
 since: 2015
 creative_commons: by-nc-sa
 avatar: http://s.luodaoyi.com/blog.jpg
-#links_title: Links
-#links:
-#  大官人服务器: https://52res.taobao.com
-#  畅爽游戏加速器: http://www.52res.com
-#  七牛云存储: https://portal.qiniu.com/signup?code=3lid1lwcyi9g2
+links_title: Links
+links:
+  大官人服务器: https://52res.taobao.com
+  畅爽游戏加速器: http://www.52res.com
+  七牛云存储: https://portal.qiniu.com/signup?code=3lid1lwcyi9g2
+
+#多说热门文章
+duoshuo_hotartical: true
 
 #多说分享
-duoshuo_hotartical: true
-duoshuo_share: true
+#duoshuo_share: true
+
 #首页文章预览
 index_generator:
   per_page: 5

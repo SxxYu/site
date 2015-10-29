@@ -41,7 +41,7 @@ function gitcommit () {
 		#echo "清除旧的静态页面"
 		#hexo clean
 		echo `date`
-		nowdate=`date +%Y%m%d`
+		nowdate=`date '+%Y-%m-%d%T'`
 		echo "添加git修改"
 		git add .
 		echo "提交git修改"
