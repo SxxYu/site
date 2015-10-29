@@ -79,6 +79,7 @@ deploy:
   repo:
    github: git@github.com:luodaoyi/luodaoyi.github.io.git
    gitcafe: git@gitcafe.com:daoyi/daoyi.git
+   coding: git@git.coding.net:luodaoyi/blog.git
 #deploy:
 #  type: git
 #  message: [message]

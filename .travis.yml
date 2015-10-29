@@ -9,6 +9,7 @@ addons:
   ssh_known_hosts:
   - gitcafe.com
   - 119.254.210.188
+  - coding.net
 
 cache:
   apt: true
