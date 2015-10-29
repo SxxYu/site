@@ -11,6 +11,7 @@ addons:
   - 119.254.210.188
   - coding.net
   - git.coding.net
+  - 61.146.73.68
 
 cache:
   apt: true
