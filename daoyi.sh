@@ -36,8 +36,6 @@ function gitcommit () {
     echo "建立新的备份"
     cp themes/next/_config.yml _config-thems-next.yml
     cp _config.yml _config-site.yml
-	echo "清除旧的静态页面"
-	hexo clean
 	echo `date`
 	nowdate=`date '+%Y-%m-%d-%T'`
 	echo "添加git修改"
@@ -46,11 +44,11 @@ function gitcommit () {
 	git commit -m ${nowdate}
 	echo "推送git的master分支"
 	git push -u origin master
-	echo "生成静态页面并推送"
-	hexo generate
 	echo "发布静态页面"
 	cd public
-	git init
+	git pull
+	echo "生成静态页面并推送"
+	hexo generate
 	git add .
 	git commit -m ${nowdate}
 	git remote add origin git@github.com:SxxYu/SxxYu.github.io.git
