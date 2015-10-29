@@ -77,11 +77,8 @@ deploy:
 #社交连接
 social:
   github: https://github.com/luodaoyi
-  weibo: http://weibo.com/5339740309
-  zhihu: http://www.zhihu.com/people/daguanren
-  服务器: https://52res.taobao.com
-  VPN: http://www.52res.com
-  七牛: https://portal.qiniu.com/signup?code=3lid1lwcyi9g2
+  微博: http://weibo.com/5339740309
+  知乎: http://www.zhihu.com/people/daguanren
 
 #多说评论
 duoshuo_shortname: luodaoyi
