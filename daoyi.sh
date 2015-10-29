@@ -15,13 +15,13 @@ function installtheme () {
 	echo "克隆从github克隆远程库"
 	git clone https://github.com/iissnan/hexo-theme-next themes/next
 	echo "备份新的主题参数"
-	cp themes/next/_config.yml theme_back_config.yml
-	echo "删除主题参数"
-	rm -f themes/next/_config.yml
+	mv themes/next/_config.yml themes/next/new_theme_config.yml
+	#echo "删除主题参数"
+	#rm -f themes/next/_config.yml
 	echo "复制主题参数"
 	cp _config-thems-next.yml themes/next/_config.yml
-	echo "复制站点配置"
-	cp _config-site.yml _config.yml
+	#echo "复制站点配置"
+	#cp _config-site.yml _config.yml
 	echo "删除主题目录的Git记录文件"
 	rm -rf themes/next/.git
 	echo "删除页脚文件"
@@ -99,8 +99,7 @@ function gitcommit () {
 	echo "PUSH到github仓库"
 	git push -u origin master
 	#hexo deploy
-
-	cd ../
+	#cd ../
 	echo "如果没有错误就是搞定了"
 }
 
