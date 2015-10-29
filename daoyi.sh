@@ -47,15 +47,13 @@ function gitcommit () {
 	cd ../
 	mkdir website
 	cd website
-	git init
-	git remote add origin git@github.com:SxxYu/SxxYu.github.io.git
-	git pull origin master
+	git clone git@github.com:SxxYu/SxxYu.github.io.git
 	cd ../
 	cd site
 	hexo clean
 	hexo g
 	cd ../
-	cp -rf site/public website
+	cp -rf site/public/* website
 	cd website
 	git add .
 	git commit -m ${nowdate}
