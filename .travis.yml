@@ -8,7 +8,7 @@ node_js:
 addons:
   ssh_known_hosts:
   - gitcafe.com
-  - 111.22.33.44
+  - 119.254.210.188
 
 cache:
   apt: true
