@@ -3,10 +3,15 @@ function installtheme () {
 	echo "开始升级主题"
 	echo `date`
 	path=$(cd "$(dirname "$0")"; pwd)
-	direpath=$path"/themes/next/"
+	direpath=$path"/themes/next"
 	echo $direpath
-	rm -rf themes/next
-	echo "已删除文件夹"
+	if [ ! -d "$direpath" ]; then
+		echo "文件夹不存在！"
+	else
+		echo "文件夹存在！"
+		echo "删除主题文件夹"
+		rm -rf themes/next
+	fi
 	echo "克隆从github克隆远程库"
 	git clone https://github.com/iissnan/hexo-theme-next themes/next
 	echo "备份新的主题参数"
@@ -17,7 +22,12 @@ function installtheme () {
 	cp _config-thems-next.yml themes/next/_config.yml
 	echo "复制站点配置"
 	cp _config-site.yml _config.yml
+	echo "删除主题目录的Git记录文件"
 	rm -rf themes/next/.git
+	echo "删除页脚文件"
+	rn -rf themes/next/layout/_partials/footer.swig
+	echo "复制页脚文件到主题目录"
+	cp footer.swig themes/next/layout/_partials/footer.swig
 	#echo "复制readme.md"
 	#cp README.md
 	echo "复制腾讯404界面"
@@ -29,12 +39,15 @@ function installtheme () {
 }
 function test () {
 	path=$(cd "$(dirname "$0")"; pwd)
-	direpath=$path"/.deploy"
+	direpath=$path"/themes/next"
 	echo $direpath
 	if [ ! -d "$direpath" ]; then
-		echo "文件夹不存在！"	
+		echo "文件夹不存在！"
+	else
+		echo "文件夹存在！"
+		echo "删除主题文件夹"
 	fi
-	echo "文件夹存在！"
+	
 }
 
 
@@ -62,22 +75,31 @@ function gitcommit () {
 		git clone git@github.com:SxxYu/SxxYu.github.io.git .deploy	
 	else
 		echo "文件夹存在！拉取"
+		echo "进入！.deploy目录"
 		cd .deploy
+		echo "开始拉取。。。。"
 		git pull
+		echo "拉取完毕进入上级目录"
 		cd ../
 	fi
+	echo "清除hexo生成的静态文件"
 	hexo clean
+	echo "生成新的静态文件"
 	hexo g
+	echo "复制静态文件到.deploy目录"
 	cp -rf public/* .deploy
+	echo "进入.deploy目录"
 	cd .deploy
+	echo "添加静态页面更改"
 	git add .
+	echo "提交静态页面更改"
 	git commit -m ${nowdate}
 	#git remote add origin git@github.com:SxxYu/SxxYu.github.io.git
+	echo "PUSH到github仓库"
 	git push -u origin master
 	#hexo deploy
 
 	cd ../
-	hexo clean
 	echo "如果没有错误就是搞定了"
 }
 

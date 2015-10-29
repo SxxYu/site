@@ -1,8 +1,3 @@
-#修改了的文件汇总
-
-# thems/next/layout/_partials/footer.swig #
-
-```
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
 <div class="copyright" >
@@ -43,19 +38,3 @@
 
 
 {% block footer %}{% endblock %}
-
-```
-
-# thems/next/layout/_partials/head.swig #
-
-```
-<link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
-```
-
-#编译状态图片#
-
-```
-<div class="theme-info">
-编译状态 <img src="https://travis-ci.org/luodaoyi/site.svg?branch=master" align="middle"/>
-</div>
-```
