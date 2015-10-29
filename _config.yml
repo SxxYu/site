@@ -69,7 +69,10 @@ theme: next
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:luodaoyi/luodaoyi.github.io.git
+  message: [message]
+  repo:
+    github: git@github.com:luodaoyi/luodaoyi.github.io.git,[branch]
+    gitcafe: git@gitcafe.com:daoyi/daoyi.git,[branch]
 
 Social: 
   github: https://github.com/luodaoyi

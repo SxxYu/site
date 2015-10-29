@@ -59,6 +59,7 @@ function installhexo () {
 	npm install hexo-generator-sitemap --save
 	npm install hexo-deployer-git --save
 	npm install hexo-generator-category --save
+	npm install hexo-generator-baidu-sitemap --save
 	echo "如果没有错误就是搞定了"
 }
 case $1 in
