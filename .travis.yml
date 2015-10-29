@@ -32,7 +32,6 @@ install:
 - npm install --no-optional
 
 script:
-- hexo clean
 - hexo g
 - hexo d
 

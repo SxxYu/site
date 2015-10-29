@@ -76,10 +76,16 @@ theme: next
 
 deploy:
   type: git
+  repo: git@github.com:luodaoyi/luodaoyi.github.io.git
+  branch: [branch]
   message: [message]
-  repo: 
-    github: git@github.com:luodaoyi/luodaoyi.github.io.git,[branch]
-    gitcafe: git@gitcafe.com:daoyi/daoyi.git,[branch]
+
+#deploy:
+#  type: git
+#  message: [message]
+#  repo: 
+#    github: git@github.com:luodaoyi/luodaoyi.github.io.git,[branch]
+#    gitcafe: git@gitcafe.com:daoyi/daoyi.git,[branch]
 
 Social: 
   github: https://github.com/luodaoyi
