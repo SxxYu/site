@@ -30,6 +30,12 @@ function installtheme () {
 
 function gitcommit () {
     echo "开始提交日志并且提交到github"
+    echo "清除旧的参数备份"
+    rm _config-thems-next.yml
+    rm _config-site.yml
+    echo "建立新的备份"
+    cp themes/next/_config.yml _config-thems-next.yml
+    cp _config.yml _config-site.yml
 	echo "清除旧的静态页面"
 	hexo clean
 	echo `date`

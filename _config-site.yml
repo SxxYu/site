@@ -67,12 +67,24 @@ theme: next
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
+#deploy: 
+#  type: git
+#  message: [message]
+#  repo: 
+#    github: git@github.com:luodaoyi/luodaoyi.github.io.git
+#    gitcafe: git@gitcafe.com:daoyi/daoyi.git
+
 deploy:
   type: git
-  message: [message]
-    repo: 
-    github: git@github.com:luodaoyi/luodaoyi.github.io.git,[branch]
-    gitcafe: git@gitcafe.com:daoyi/daoyi.git,[branch]
+  repo:
+   github: git@github.com:luodaoyi/luodaoyi.github.io.git
+   gitcafe: git@gitcafe.com:daoyi/daoyi.git
+#deploy:
+#  type: git
+#  message: [message]
+#  repo: 
+#    github: git@github.com:luodaoyi/luodaoyi.github.io.git,[branch]
+#    gitcafe: git@gitcafe.com:daoyi/daoyi.git,[branch]
 
 Social: 
   github: https://github.com/luodaoyi
@@ -86,7 +98,7 @@ feed:
   limit: 0
 since: 2015
 creative_commons: by-nc-sa
-avatar: https://avatars1.githubusercontent.com/u/32269?v=3&s=460
+avatar: http://s.luodaoyi.com/blog.jpg
 links_title: Links
 links: 
   大官人服务器: https://52res.taobao.com
