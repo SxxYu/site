@@ -37,7 +37,7 @@ before_install:
 - git clone https://github.com/luodaoyi/luodaoyi.github.io .deploy
 
 install:
-- npm install --no-optional
+- npm install --save
 
 script:
 - hexo clean
