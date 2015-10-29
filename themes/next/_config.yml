@@ -83,12 +83,12 @@ sidebar: always
   #Others:
 
 # Social Icons
-#social_icons:
-#  enable: true
+social_icons:
+  enable: true
   # Icon Mappings
-#  GitHub: github
+  GitHub: github
   #Twitter: twitter
-#  Weibo: weibo
+  Weibo: weibo
 
 
 # Sidebar Avatar
@@ -144,7 +144,7 @@ scroll_to_more: true
 # Automatically Excerpt
 auto_excerpt:
   enable: true
-  length: 100
+  length: 150
 
 # Use Lato font
 use_font_lato: true

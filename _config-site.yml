@@ -74,14 +74,6 @@ deploy:
    gitcafe: git@gitcafe.com:daoyi/daoyi.git
    #coding: git@git.coding.net:luodaoyi/blog.git
 
-#社交
-social_icons:
-#  enable: true
-  # Icon Mappings
-  GitHub: github
-  #Twitter: twitter
-  Weibo: weibo
-
 #社交连接
 social:
   github: https://github.com/luodaoyi
@@ -105,8 +97,14 @@ feed:
 
 #博客年份
 since: 2015
+
+#许可方式
 creative_commons: by-nc-sa
+
+#头像路径
 avatar: http://s.luodaoyi.com/blog.jpg
+
+#友情链接
 links_title: Links
 links:
   大官人服务器: https://52res.taobao.com
