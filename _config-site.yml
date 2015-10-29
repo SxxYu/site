@@ -3,16 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 大官人博客
-subtitle: 老罗的个人网站
-description: 大官人博客，老罗的个人网站
-author: 大官人
+title: 赵毛毛博客
+subtitle: 赵毛毛博客的个人网站
+description: 赵毛毛博客，赵毛毛博客的个人网站
+author: 赵毛毛博客
 language: zh-Hans
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://luodaoyi.com
+url: http://woca.so
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -70,14 +70,14 @@ theme: next
 deploy:
   type: git
   repo:
-   github: git@github.com:luodaoyi/luodaoyi.github.io.git
-   gitcafe: git@gitcafe.com:daoyi/daoyi.git
+   github: git@github.com:SxxYu/SxxYu.github.io.git 
+   #gitcafe: git@gitcafe.com:daoyi/daoyi.git
    #coding: git@git.coding.net:luodaoyi/blog.git
 
 #社交连接
 social:
   GitHub: https://github.com/luodaoyi
-  微博: http://weibo.com/5339740309
+  微博: http://weibo.com/5727891308/profile?topnav=1&wvr=6
   #知乎: http://www.zhihu.com/people/daguanren
   #Twitter: https://twitter.com/luodaoyi
 

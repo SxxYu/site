@@ -5,11 +5,9 @@ function installtheme () {
 	path=$(cd "$(dirname "$0")"; pwd)
 	direpath=$path"/themes/next/"
 	echo $direpath
-	if [ ! -d $direpath ]; then
 	echo "文件夹已存在"
 	rm -rf themes/next
 	echo "已删除文件夹"
-	fi
 	echo "克隆从github克隆远程库"
 	git clone https://github.com/iissnan/hexo-theme-next themes/next
 	echo "备份新的主题参数"
@@ -38,19 +36,25 @@ function gitcommit () {
     echo "建立新的备份"
     cp themes/next/_config.yml _config-thems-next.yml
     cp _config.yml _config-site.yml
-		#echo "清除旧的静态页面"
-		#hexo clean
-		echo `date`
-		nowdate=`date '+%Y-%m-%d-%T'`
-		echo "添加git修改"
-		git add .
-		echo "提交git修改"
-		git commit -m ${nowdate}
-		echo "推送git的master分支"
-		git push -u origin master
-	#echo "生成静态页面并推送"
-	#hexo generate
-	#echo "发布静态页面"
+	echo "清除旧的静态页面"
+	hexo clean
+	echo `date`
+	nowdate=`date '+%Y-%m-%d-%T'`
+	echo "添加git修改"
+	git add .
+	echo "提交git修改"
+	git commit -m ${nowdate}
+	echo "推送git的master分支"
+	git push -u origin master
+	echo "生成静态页面并推送"
+	hexo generate
+	echo "发布静态页面"
+	cd public
+	git init
+	git add .
+	git commit -m ${nowdate}
+	git remote add origin git@github.com:SxxYu/SxxYu.github.io.git
+	git push -u origin master
 	#hexo deploy
 	echo "如果没有错误就是搞定了"
 }
