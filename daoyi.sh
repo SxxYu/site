@@ -5,7 +5,6 @@ function installtheme () {
 	path=$(cd "$(dirname "$0")"; pwd)
 	direpath=$path"/themes/next/"
 	echo $direpath
-	echo "文件夹已存在"
 	rm -rf themes/next
 	echo "已删除文件夹"
 	echo "克隆从github克隆远程库"
@@ -18,6 +17,7 @@ function installtheme () {
 	cp _config-thems-next.yml themes/next/_config.yml
 	echo "复制站点配置"
 	cp _config-site.yml _config.yml
+	rm -rf themes/next/.git
 	#echo "复制readme.md"
 	#cp README.md
 	echo "复制腾讯404界面"
@@ -27,6 +27,16 @@ function installtheme () {
 	echo `date`
 	echo "升级完毕"
 }
+function test () {
+	path=$(cd "$(dirname "$0")"; pwd)
+	direpath=$path"/.deploy"
+	echo $direpath
+	if [ ! -d "$direpath" ]; then
+		echo "文件夹不存在！"	
+	fi
+	echo "文件夹存在！"
+}
+
 
 function gitcommit () {
     echo "开始提交日志并且提交到github"
@@ -44,7 +54,18 @@ function gitcommit () {
 	git commit -m ${nowdate}
 	echo "推送git的master分支"
 	git push -u origin master
-	git clone git@github.com:SxxYu/SxxYu.github.io.git .deploy
+	path=$(cd "$(dirname "$0")"; pwd)
+	direpath=$path"/.deploy"
+	echo $direpath
+	if [ ! -d "$direpath" ]; then
+		echo "文件夹不存在！克隆！"
+		git clone git@github.com:SxxYu/SxxYu.github.io.git .deploy	
+	else
+		echo "文件夹存在！拉取"
+		cd .deploy
+		git pull
+		cd ../
+	fi
 	hexo clean
 	hexo g
 	cp -rf public/* .deploy
@@ -79,15 +100,18 @@ case $1 in
 	n)
 	installhexo
 	;;
-	t)
+	z)
 	installtheme
 	;;
 	b)
 	gitcommit
 	;;
+	t)
+	test
+	;;
 	*)
 	echo "daoyi.sh n 不同的电脑部署hexo"
-	echo "daoyi.sh t 重新部署next主题"
+	echo "daoyi.sh z 重新部署next主题"
 	echo "daoyi.sh b 提交博客源代码并且发布"
 	;;
 esac
