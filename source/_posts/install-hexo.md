@@ -1,4 +1,5 @@
 title: hexo常用命令
+tags: Hexo
 ---
 # My Website
 [![Build Status](https://travis-ci.org/luodaoyi/site.svg?branch=master)](https://travis-ci.org/luodaoyi/site)
@@ -25,9 +26,6 @@ $ hexo s
 ```
 
 ## License
-
+```
 [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)
 ```
-
-
-

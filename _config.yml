@@ -67,10 +67,10 @@ theme: next
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
-#deploy: 
+#deploy:
 #  type: git
 #  message: [message]
-#  repo: 
+#  repo:
 #    github: git@github.com:luodaoyi/luodaoyi.github.io.git
 #    gitcafe: git@gitcafe.com:daoyi/daoyi.git
 
@@ -83,11 +83,11 @@ deploy:
 #deploy:
 #  type: git
 #  message: [message]
-#  repo: 
+#  repo:
 #    github: git@github.com:luodaoyi/luodaoyi.github.io.git,[branch]
 #    gitcafe: git@gitcafe.com:daoyi/daoyi.git,[branch]
 
-Social: 
+Social:
   github: https://github.com/luodaoyi
   weibo: http://weibo.com/5339740309
   zhihu: http://www.zhihu.com/people/daguanren
@@ -101,10 +101,12 @@ since: 2015
 creative_commons: by-nc-sa
 avatar: http://s.luodaoyi.com/blog.jpg
 links_title: Links
-links: 
+links:
   大官人服务器: https://52res.taobao.com
   畅爽游戏加速器: http://www.52res.com
   七牛云存储: https://portal.qiniu.com/signup?code=3lid1lwcyi9g2
+  github: https://github.com/luodaoyi
+  weibo: http://weibo.com/5339740309
 duoshuo_hotartical: true
 duoshuo_share: true
 index_generator:

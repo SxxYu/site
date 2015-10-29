@@ -9,9 +9,9 @@ addons:
   ssh_known_hosts:
   - gitcafe.com
   - 119.254.210.188
-  - coding.net
-  - git.coding.net
-  - 61.146.73.68
+#  - coding.net
+#  - git.coding.net
+#  - 61.146.73.68
 
 cache:
   apt: true
@@ -20,7 +20,7 @@ cache:
 
 before_install:
 # Decrypt the private key
-- openssl aes-256-cbc -K $encrypted_2ff46e3157ae_key -iv $encrypted_2ff46e3157ae_iv 
+- openssl aes-256-cbc -K $encrypted_2ff46e3157ae_key -iv $encrypted_2ff46e3157ae_iv
  -in .travis/ssh_key.enc -out ~/.ssh/id_rsa -d
 # Set the permission of the key
 - chmod 600 ~/.ssh/id_rsa
@@ -40,7 +40,7 @@ install:
 - npm install --no-optional
 
 script:
-- hexo clean
+- clean
 - hexo g
 - hexo deploy
 

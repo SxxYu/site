@@ -5,11 +5,11 @@ function installtheme () {
 	path=$(cd "$(dirname "$0")"; pwd)
 	direpath=$path"/themes/next/"
 	echo $direpath
-	if [ ! -d $direpath ]; then 
+	if [ ! -d $direpath ]; then
 	echo "文件夹已存在"
-	rm -rf themes/next 
+	rm -rf themes/next
 	echo "已删除文件夹"
-	fi 
+	fi
 	echo "克隆从github克隆远程库"
 	git clone https://github.com/iissnan/hexo-theme-next themes/next
 	echo "备份新的主题参数"
@@ -21,7 +21,7 @@ function installtheme () {
 	echo "复制站点配置"
 	cp _config-site.yml _config.yml
 	#echo "复制readme.md"
-	#cp README.md 
+	#cp README.md
 	echo "复制腾讯404界面"
 	cp 404.md themes/next/source/404.html
 	echo "复制nojekyll"
@@ -38,19 +38,19 @@ function gitcommit () {
     echo "建立新的备份"
     cp themes/next/_config.yml _config-thems-next.yml
     cp _config.yml _config-site.yml
-	echo "清除旧的静态页面"
-	hexo clean
-	echo `date`
-	nowdate=`date +%Y%m%d`
-	echo "添加git修改"
-	git add .
-	echo "提交git修改"
-	git commit -m ${nowdate}
-	echo "推送git的master分支"
-	git push -u origin master
+		#echo "清除旧的静态页面"
+		#hexo clean
+		echo `date`
+		nowdate=`date +%Y%m%d`
+		echo "添加git修改"
+		git add .
+		echo "提交git修改"
+		git commit -m ${nowdate}
+		echo "推送git的master分支"
+		git push -u origin master
 	#echo "生成静态页面并推送"
 	#hexo generate
-	#echo "发布静态页面"	
+	#echo "发布静态页面"
 	#hexo deploy
 	echo "如果没有错误就是搞定了"
 }
@@ -80,7 +80,7 @@ case $1 in
 	b)
 	gitcommit
 	;;
-	*)  
+	*)
 	echo "daoyi.sh n 不同的电脑部署hexo"
 	echo "daoyi.sh t 重新部署next主题"
 	echo "daoyi.sh b 提交博客源代码并且发布"
