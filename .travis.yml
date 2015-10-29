@@ -13,7 +13,7 @@ cache:
 before_install:
 # Decrypt the private key
 - openssl aes-256-cbc -K $encrypted_2ff46e3157ae_key -iv $encrypted_2ff46e3157ae_iv 
--in .travis/ssh_key.enc -out ~/.ssh/id_rsa -d
+ -in .travis/ssh_key.enc -out ~/.ssh/id_rsa -d
 # Set the permission of the key
 - chmod 600 ~/.ssh/id_rsa
 # 设置known_hosts文件添加gitcafe
