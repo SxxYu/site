@@ -37,8 +37,8 @@ install:
 - npm install --no-optional
 
 script:
-- hexo g
-- hexo d
+- hexo clean
+- hexo g d
 
 branches:
   only:
