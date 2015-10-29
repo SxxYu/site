@@ -49,13 +49,13 @@ function gitcommit () {
 	cd website
 	git init
 	git remote add origin git@github.com:SxxYu/SxxYu.github.io.git
-	git pull
+	git pull origin master
 	cd ../
 	cd site
 	hexo clean
-	hexo generate
+	hexo g
 	cd ../
-	cp -rf public website
+	cp -rf site/public website
 	cd website
 	git add .
 	git commit -m ${nowdate}
