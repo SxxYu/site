@@ -20,10 +20,12 @@ function installtheme () {
 	cp _config-thems-next.yml themes/next/_config.yml
 	echo "复制站点配置"
 	cp _config-site.yml _config.yml
-	echo "赋值readme.md"
-	cp README.md themes/next/source/README.md
+	echo "复制readme.md"
+	cp README.md 
 	echo "复制腾讯404界面"
 	cp 404.md themes/next/source/404.html
+	echo "复制nojekyll"
+	cp .nojekyll themes/next/source/.nojekyll
 	echo `date`
 	echo "升级完毕"
 }
