@@ -77,8 +77,6 @@ theme: next
 deploy:
   type: git
   repo: git@github.com:luodaoyi/luodaoyi.github.io.git
-  branch: [branch]
-  message: [message]
 
 #deploy:
 #  type: git
