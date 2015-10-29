@@ -46,7 +46,6 @@ function gitcommit () {
 	git commit -m ${nowdate}
 	echo "推送git的master分支"
 	git push -u origin master
-
 	#echo "生成静态页面并推送"
 	#hexo generate
 	#echo "发布静态页面"	

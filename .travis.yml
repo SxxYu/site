@@ -38,7 +38,8 @@ install:
 
 script:
 - hexo clean
-- hexo g -d
+- hexo g
+- hexo deploy
 
 branches:
   only:
