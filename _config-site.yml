@@ -76,16 +76,16 @@ deploy:
 
 #社交连接
 social:
-  GitHub: https://github.com/luodaoyi
-  微博: http://weibo.com/5727891308/profile?topnav=1&wvr=6
+  GitHub: https://github.com/SxxYu
+  微博: http://weibo.com/5727891308
   #知乎: http://www.zhihu.com/people/daguanren
   #Twitter: https://twitter.com/luodaoyi
 
 #多说评论
-duoshuo_shortname: luodaoyi
+duoshuo_shortname: woca
 
 #百度统计
-baidu_analytics: 227548a37676c557885bb56cd147b82f
+#baidu_analytics: 227548a37676c557885bb56cd147b82f
 
 #rss
 feed:
@@ -97,10 +97,10 @@ feed:
 since: 2015
 
 #许可方式
-creative_commons: by-nc-sa
+#creative_commons: by-nc-sa
 
 #头像路径
-avatar: http://s.luodaoyi.com/blog.jpg
+avatar: http://7xnuax.com1.z0.glb.clouddn.com/my.gif
 
 #友情链接
 links_title: Links
