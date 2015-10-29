@@ -67,49 +67,51 @@ theme: next
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
-#deploy:
-#  type: git
-#  message: [message]
-#  repo:
-#    github: git@github.com:luodaoyi/luodaoyi.github.io.git
-#    gitcafe: git@gitcafe.com:daoyi/daoyi.git
-
 deploy:
   type: git
   repo:
    github: git@github.com:luodaoyi/luodaoyi.github.io.git
    gitcafe: git@gitcafe.com:daoyi/daoyi.git
    #coding: git@git.coding.net:luodaoyi/blog.git
-#deploy:
-#  type: git
-#  message: [message]
-#  repo:
-#    github: git@github.com:luodaoyi/luodaoyi.github.io.git,[branch]
-#    gitcafe: git@gitcafe.com:daoyi/daoyi.git,[branch]
 
+#社交连接
 social:
   github: https://github.com/luodaoyi
   weibo: http://weibo.com/5339740309
   zhihu: http://www.zhihu.com/people/daguanren
+  服务器: https://52res.taobao.com
+  VPN: http://www.52res.com
+  七牛: https://portal.qiniu.com/signup?code=3lid1lwcyi9g2
+
+#多说评论
 duoshuo_shortname: luodaoyi
+
+#百度统计
 baidu_analytics: 227548a37676c557885bb56cd147b82f
+
+#rss
 feed:
   type: atom
   path: atom.xml
   limit: 0
+
+#博客年份
 since: 2015
 creative_commons: by-nc-sa
 avatar: http://s.luodaoyi.com/blog.jpg
-links_title: Links
-links:
-  大官人服务器: https://52res.taobao.com
-  畅爽游戏加速器: http://www.52res.com
-  七牛云存储: https://portal.qiniu.com/signup?code=3lid1lwcyi9g2
+#links_title: Links
+#links:
+#  大官人服务器: https://52res.taobao.com
+#  畅爽游戏加速器: http://www.52res.com
+#  七牛云存储: https://portal.qiniu.com/signup?code=3lid1lwcyi9g2
+
+#多说分享
 duoshuo_hotartical: true
 duoshuo_share: true
+#首页文章预览
 index_generator:
   per_page: 5
-  
+
 archive_generator:
   per_page: 20
   yearly: true
