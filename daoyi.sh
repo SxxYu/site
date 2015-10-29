@@ -55,7 +55,7 @@ function gitcommit () {
 	hexo clean
 	hexo generate
 	cd ../
-	cp public/* website
+	cp -rf public website
 	cd website
 	git add .
 	git commit -m ${nowdate}
