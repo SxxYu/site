@@ -48,7 +48,8 @@ function tests () {
 		echo "文件夹存在！"
 		echo "删除主题文件夹"
 	fi
-	
+	echo "woca.so" > CNAME
+
 }
 
 
@@ -73,7 +74,10 @@ function gitcommit () {
 	echo $direpath
 	if [ ! -d "$direpath" ]; then
 		echo "文件夹不存在！克隆！"
-		git clone git@github.com:SxxYu/SxxYu.github.io.git .deploy	
+		git clone git@github.com:SxxYu/SxxYu.github.io.git .deploy
+        cd .deploy
+        echo "woca.so" > CNAME
+		cd ../
 	else
 		echo "文件夹存在！拉取"
 		echo "进入！.deploy目录"
@@ -102,8 +106,8 @@ function gitcommit () {
 	#cd ../
 	echo "如果没有错误就是搞定了"
 }
-
-function installhexo () {
+	
+	function installhexo () {
 	echo "安装hexo主程序"
 	npm install -g hexo-cli
 	npm install
@@ -118,7 +122,7 @@ function installhexo () {
 	npm install hexo-generator-baidu-sitemap --save
 	echo "如果没有错误就是搞定了"
 }
-case $1 in
+	case $1 in
 	x)
 	installhexo
 	;;
@@ -136,4 +140,4 @@ case $1 in
 	echo "daoyi.sh z 重新部署next主题"
 	echo "daoyi.sh b 提交博客源代码并且发布"
 	;;
-esac
+	esac
