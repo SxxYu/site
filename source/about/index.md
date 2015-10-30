@@ -3,21 +3,21 @@ date: 2015-10-28 16:07:37
 ---
 ##个人信息
 
-![大官人](http://s.luodaoyi.com/blog.jpg)
+![毛毛](http://7xnuax.com1.z0.glb.clouddn.com/8BEE2FA0600B606415E9DF87BD3E5F0D.gif)
 
-中文名：罗道义
+中文名：赵毛毛
 
-英文名：luodaoyi
+英文名：maoamo
 
-网名：大官人
+网名：毛毛会幸福
 
-职业：码农
+职业：无产阶级
 
 ##联系方式
 
-邮箱：[admin@52res.com](admin@52res.com)
+邮箱：[908380424@qqcom](908380424@qq.com)
 
-QQ：[286035756](http://b.qq.com/webc.htm?new=0&sid=286035756&o=大官人博客&q=7)
+QQ：[908380424](http://www.weibo.com/u/5727891308)
 
 站点：
 
