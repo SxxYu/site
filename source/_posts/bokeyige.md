@@ -1,6 +1,6 @@
 title: 转自《一个》
 tags:
-  - xxx
+  - 
 date: 2015-10-30 07:11:51
 categories: 文件
 ---
