@@ -1,4 +1,4 @@
-title: 转自《一个》
+title: 理想
 tags:
   - 
 date: 2015-10-30 07:11:51
@@ -253,3 +253,7 @@ DOTA是个老熊曾经无比沉迷的网络对战游戏。
 
 
 ![](http://7xnuax.com1.z0.glb.clouddn.com/CBBA3355E592EB3B885B6E542D24951F.gif)
+
+
+
+## 转自《一个》
