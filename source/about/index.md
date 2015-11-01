@@ -26,7 +26,7 @@ QQ：[908380424](http://www.weibo.com/u/5727891308)
 
 [畅爽游戏加速器](http://www.52res.com)
 
-[大官人博客](http://luodaoyi.com)
+[毛毛会幸福博客](http://woca.so)
 
 [大官人游戏服务器](https://52res.taobao.com)
 
